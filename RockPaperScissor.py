@@ -1,13 +1,11 @@
 import random
 
-
 def logic(user):
     game = ["R", "P","S"]
     # Rock > Scissor
     # Scissor > Paper
     # Paper > Rock
     ai = random.choice(game)
-    
     
     if user == ai:
         print("Its a draw")
@@ -22,5 +20,4 @@ if user == "R" or user == "P" or user == "S":
     print(f"You have choosen {user}")
     logic(user)
 else:
-    print("Invalid Input")
-    
+    print("Invalid Input")   
